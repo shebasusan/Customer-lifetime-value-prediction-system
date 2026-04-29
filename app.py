@@ -24,6 +24,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.pipeline import Pipeline
 from sklearn.inspection import permutation_importance
+import requests
 import io
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -197,8 +198,9 @@ st.markdown(f"""
 # ─────────────────────────────────────────────────────────────────────────────
 # DATA LOADING FROM OnlineRetail.csv  (cached)
 # ─────────────────────────────────────────────────────────────────────────────
+url="https://drive.google.com/uc?export=download&id=1JqtZYTRRsgHJRXykHB8fV2kMEkDfT7qd"
 @st.cache_data(show_spinner="📂  Loading OnlineRetail.csv…")
-def load_raw(path="OnlineRetail.csv"):
+def load_raw(path=url):
     """Read the UCI Online Retail dataset. Tries common encodings."""
     for enc in ("utf-8", "latin-1", "cp1252"):
         try:
@@ -999,7 +1001,7 @@ with t5:
         fg = text_map.get(val, TEXT)
         return f"background-color: {bg}; color: {fg}; font-weight: 600;"
 
-    styled = table.style.applymap(highlight_segment, subset=["Segment"]) \
+    styled = table.style.map(highlight_segment, subset=["Segment"]) \
                         .format({"CLV": "${:,.0f}", "PredictedCLV": "${:,.0f}",
                                  "CLV_Error": "${:,.0f}", "AvgOrderValue": "${:,.0f}",
                                  "PurchaseFreq": "{:.2f}", "AvgOrderValue": "${:,.0f}"})
