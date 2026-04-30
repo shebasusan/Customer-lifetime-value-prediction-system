@@ -1,4 +1,4 @@
-# 💎 Customer Lifetime Value (CLV) Prediction System
+ Customer Lifetime Value (CLV) Prediction System
 
 A machine learning-based web application that predicts **Customer Lifetime Value (CLV)**—the total revenue a business can expect from a customer over their entire relationship.
 
@@ -6,33 +6,33 @@ The system uses real-world transaction data, performs feature engineering (RFM a
 
 ---
 
-## 🚀 Features
+ Features
 
-- 📊 **CLV Prediction using Machine Learning**
+- CLV Prediction using Machine Learning**
   - Linear Regression, Ridge, Lasso
   - Random Forest, Gradient Boosting
 
-- 🧠 **Advanced Feature Engineering**
+-  **Advanced Feature Engineering**
   - RFM Analysis (Recency, Frequency, Monetary)
   - Customer behavior metrics (tenure, purchase frequency, etc.)
 
-- 📈 **Interactive Dashboard**
+-  **Interactive Dashboard**
   - Built using Streamlit
   - Real-time predictions and visual insights
 
-- 🧩 **Customer Segmentation**
+-  **Customer Segmentation**
   - High, Medium, Low value customers
   - Actionable business strategies
 
-- 🔍 **Feature Importance Analysis**
+-  **Feature Importance Analysis**
   - Understand what drives customer value
 
-- 🧾 **Raw Data Exploration**
+-  **Raw Data Exploration**
   - Analyze transactions, revenue trends, and customer behavior
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python**
 - **Pandas, NumPy**
@@ -42,7 +42,7 @@ The system uses real-world transaction data, performs feature engineering (RFM a
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - UCI Online Retail Dataset
 - Contains transactional data of customers across multiple countries
@@ -50,7 +50,7 @@ The system uses real-world transaction data, performs feature engineering (RFM a
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ```bash
 # Clone the repository
